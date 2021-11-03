@@ -1,8 +1,8 @@
-package com.github.rinotc.akka.sample.oopstyle
+package sample.oopstyle
 
 import akka.actor.typed.Behavior
 import akka.actor.typed.scaladsl.{AbstractBehavior, ActorContext, Behaviors}
-import com.github.rinotc.akka.sample.oopstyle.Tom.Message
+import sample.oopstyle.Tom.Message
 
 object Tom {
   sealed trait Message
@@ -15,7 +15,7 @@ private class Tom(context: ActorContext[Message]) extends AbstractBehavior[Messa
   override def onMessage(msg: Message): Behavior[Message] = {
     msg match {
       case Tom.Hello =>
-        println("Hi, I'm Tom.")
+        println("Hi, I'm sample.oopstyle.Tom.")
         this
     }
   }

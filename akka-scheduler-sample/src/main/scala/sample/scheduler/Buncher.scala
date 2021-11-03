@@ -1,8 +1,7 @@
-package com.github.rinotc.akka.scheduler.sample
+package sample.scheduler
 
-import akka.actor.typed.scaladsl.{AbstractBehavior, ActorContext, Behaviors, TimerScheduler}
+import akka.actor.typed.scaladsl.{Behaviors, TimerScheduler}
 import akka.actor.typed.{ActorRef, Behavior}
-import Buncher.Command
 
 import scala.concurrent.duration.FiniteDuration
 

@@ -1,4 +1,4 @@
-package com.github.rinotc.akka.sample.oopstyle
+package sample.oopstyle
 
 import akka.actor.typed.ActorSystem
 
