@@ -31,3 +31,14 @@ lazy val `akka-style-simple-sample` = (project in file("akka-style-simple-sample
       TypeSafe.Akka.slf4j
     )
   )
+
+lazy val `akka-sending-message-sample` = (project in file("akka-sending-message-sample"))
+  .settings(
+    name := "akka-sending-message-sample",
+    libraryDependencies ++= Seq(
+      TypeSafe.config,
+      Logback.classic,
+      TypeSafe.Akka.actorTyped,
+      TypeSafe.Akka.slf4j
+    )
+  )
