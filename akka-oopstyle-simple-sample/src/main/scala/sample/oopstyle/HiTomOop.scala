@@ -2,7 +2,7 @@ package sample.oopstyle
 
 import akka.actor.typed.ActorSystem
 
-object Main {
+object HiTomOop {
   def main(args: Array[String]): Unit = {
     val actorSystem = ActorSystem.create(Tom(), "50FirstDatesSystem")
 
