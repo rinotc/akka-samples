@@ -3,6 +3,9 @@ package sample.oopstyle
 import akka.actor.typed.Behavior
 import akka.actor.typed.scaladsl.{AbstractBehavior, ActorContext, Behaviors}
 
+/**
+ * @note OOPスタイルでの書き方は一貫している。
+ */
 object OopActor {
   sealed trait Message
   final case object Message1               extends Message
