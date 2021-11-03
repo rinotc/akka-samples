@@ -42,3 +42,14 @@ lazy val `akka-sending-message-sample` = (project in file("akka-sending-message-
       TypeSafe.Akka.slf4j
     )
   )
+
+lazy val `akka-fsm-sample` = (project in file("akka-fsn-sample"))
+  .settings(
+    name := "akka-fsn-sample",
+    libraryDependencies ++= Seq(
+      TypeSafe.config,
+      Logback.classic,
+      TypeSafe.Akka.actorTyped,
+      TypeSafe.Akka.slf4j
+    )
+  )
