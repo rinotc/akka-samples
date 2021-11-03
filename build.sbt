@@ -21,7 +21,7 @@ lazy val `akka-scheduler-sample` = (project in file("akka-scheduler-sample"))
     )
   )
 
-lazy val `akka-oopstyle-simple-sample` = (project in file("akka-oopstyle-simple-sample"))
+lazy val `akka-style-simple-sample` = (project in file("akka-style-simple-sample"))
   .settings(
     name := "akka-oopstyle-simple-sample",
     libraryDependencies ++= Seq(
