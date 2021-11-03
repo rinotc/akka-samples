@@ -15,7 +15,7 @@ private class Tom(context: ActorContext[Message]) extends AbstractBehavior[Messa
   override def onMessage(msg: Message): Behavior[Message] = {
     msg match {
       case Tom.Hello =>
-        println("Hi, I'm sample.oopstyle.Tom.")
+        println("Hi, I'm Tom.")
         this
     }
   }
