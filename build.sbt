@@ -53,3 +53,15 @@ lazy val `akka-fsm-sample` = (project in file("akka-fsn-sample"))
       TypeSafe.Akka.slf4j
     )
   )
+
+lazy val `akka-persistence-sample` = (project in file("akka-persistence-sample"))
+  .settings(
+    name := "akka-persistence-sample",
+    libraryDependencies ++= Seq(
+      TypeSafe.config,
+      Logback.classic,
+      TypeSafe.Akka.actorTyped,
+      TypeSafe.Akka.slf4j,
+      TypeSafe.Akka.persistenceTyped
+    )
+  )
